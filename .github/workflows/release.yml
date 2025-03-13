@@ -60,7 +60,7 @@ jobs:
           http_archive(
             name = \"bazelpods\",
             sha256 = \"${{ env.SHA256 }}\",
-            url = \"https://github.com/sergeykhliustin/BazelPods/releases/download/${{ env.NEW_VERSION }}/release.tar.gz\"
+            url = \"https://github.com/sergiikhliustin/BazelPods/releases/download/${{ env.NEW_VERSION }}/release.tar.gz\"
           )
           load(\"@bazelpods//:repositories.bzl\", \"bazelpods_dependencies\")
           bazelpods_dependencies()
