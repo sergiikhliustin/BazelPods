@@ -50,7 +50,8 @@ apple_framework(
       "SensorsAnalyticsSDK/UIRelated/**/*.m",
       "SensorsAnalyticsSDK/Visualized/**/*.h",
       "SensorsAnalyticsSDK/Visualized/**/*.m"
-    ]
+    ],
+    allow_empty = True
   ),
   public_headers = glob(
     [
@@ -84,7 +85,8 @@ apple_framework(
       "SensorsAnalyticsSDK/UIRelated/UIView+SensorsAnalytics.h",
       "SensorsAnalyticsSDK/Visualized/SAConfigOptions+Visualized.h",
       "SensorsAnalyticsSDK/Visualized/SensorsAnalyticsSDK+Visualized.h"
-    ]
+    ],
+    allow_empty = True
   ),
   deps = [
     ":SensorsAnalyticsSDK_SensorsAnalyticsSDK_Bundle"
@@ -137,7 +139,8 @@ precompiled_apple_resource_bundle(
   resources = glob(
     [
       "SensorsAnalyticsSDK/Resources/PrivacyInfo.xcprivacy"
-    ]
+    ],
+    allow_empty = True
   )
 )
 genrule(

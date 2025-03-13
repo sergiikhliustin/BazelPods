@@ -26,12 +26,14 @@ apple_framework(
     [
       "Purchases/**/*.h",
       "Purchases/**/*.m"
-    ]
+    ],
+    allow_empty = True
   ),
   public_headers = glob(
     [
       "Purchases/Public/*.h"
-    ]
+    ],
+    allow_empty = True
   ),
   deps = [
     "//Tests/Pods/PurchasesCoreSwift:PurchasesCoreSwift"

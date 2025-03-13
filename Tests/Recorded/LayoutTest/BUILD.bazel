@@ -36,7 +36,8 @@ apple_framework(
       "LayoutTest/TestCase/**/*.mm",
       "LayoutTest/TestCase/**/*.s",
       "LayoutTest/TestCase/**/*.swift"
-    ]
+    ],
+    allow_empty = True
   ),
   deps = [
     "//Tests/Pods/LayoutTestBase:LayoutTestBase"

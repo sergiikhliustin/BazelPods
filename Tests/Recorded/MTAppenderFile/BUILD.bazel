@@ -114,13 +114,15 @@ apple_framework(
       "loglib/**/*mm/**/*.mm",
       "loglib/**/*mm/**/*.s",
       "loglib/**/*mm/**/*.swift"
-    ]
+    ],
+    allow_empty = True
   ),
   public_headers = glob(
     [
       "loglib/MTAppenderFile.h",
       "loglib/mtaf_base.hloglib/mtaf_appender.h"
-    ]
+    ],
+    allow_empty = True
   ),
   objc_defines = [
     "COCOAPODS=1"

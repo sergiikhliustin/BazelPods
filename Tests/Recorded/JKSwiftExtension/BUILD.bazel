@@ -37,7 +37,8 @@ apple_framework(
       "Sources/Classes/**/*.mm",
       "Sources/Classes/**/*.s",
       "Sources/Classes/**/*.swift"
-    ]
+    ],
+    allow_empty = True
   ),
   deps = [
     ":JKSwiftExtension_JKSwiftExtension_Bundle"
@@ -90,7 +91,8 @@ precompiled_apple_resource_bundle(
   resources = glob(
     [
       "Sources/Assets/*.png"
-    ]
+    ],
+    allow_empty = True
   )
 )
 genrule(

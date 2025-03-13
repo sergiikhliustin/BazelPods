@@ -29,12 +29,14 @@ apple_framework(
       "FirebaseCore/Extension/*.h",
       "FirebaseCore/Sources/**/*.h",
       "FirebaseCore/Sources/**/*.m"
-    ]
+    ],
+    allow_empty = True
   ),
   public_headers = glob(
     [
       "FirebaseCore/Sources/Public/FirebaseCore/*.h"
-    ]
+    ],
+    allow_empty = True
   ),
   deps = [
     "//Tests/Pods/FirebaseCoreInternal:FirebaseCoreInternal",
@@ -158,7 +160,8 @@ ios_unit_test(
       "SharedTestUtilities/ExceptionCatcher.m",
       "SharedTestUtilities/FIROptionsMock.h",
       "SharedTestUtilities/FIROptionsMock.m"
-    ]
+    ],
+    allow_empty = True
   ),
   data = [
     "FirebaseCore/Tests/Unit/Resources/GoogleService-Info.plist"

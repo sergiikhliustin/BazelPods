@@ -26,7 +26,8 @@ apple_framework(
     [
       "Source/*.h",
       "Source/*.m"
-    ]
+    ],
+    allow_empty = True
   ),
   deps = [
     ":DeviceUtil_DeviceUtil_Bundle"
@@ -67,7 +68,8 @@ precompiled_apple_resource_bundle(
   resources = glob(
     [
       "Source/DeviceList.plist"
-    ]
+    ],
+    allow_empty = True
   )
 )
 genrule(

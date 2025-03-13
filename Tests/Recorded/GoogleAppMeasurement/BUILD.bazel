@@ -96,7 +96,8 @@ apple_static_xcframework_import(
   xcframework_imports = glob(
     [
       "Frameworks/GoogleAppMeasurement.xcframework/**"
-    ]
+    ],
+    allow_empty = True
   ),
   visibility = [
     "//visibility:public"
@@ -107,7 +108,8 @@ apple_static_xcframework_import(
   xcframework_imports = glob(
     [
       "Frameworks/GoogleAppMeasurementIdentitySupport.xcframework/**"
-    ]
+    ],
+    allow_empty = True
   ),
   visibility = [
     "//visibility:public"

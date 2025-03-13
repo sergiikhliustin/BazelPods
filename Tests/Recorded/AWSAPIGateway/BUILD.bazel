@@ -25,7 +25,8 @@ apple_framework(
     [
       "AWSAPIGateway/*.h",
       "AWSAPIGateway/*.m"
-    ]
+    ],
+    allow_empty = True
   ),
   deps = [
     "//Tests/Pods/AWSCore:AWSCore"

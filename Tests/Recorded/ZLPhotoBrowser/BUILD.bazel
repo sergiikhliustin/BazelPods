@@ -28,13 +28,15 @@ apple_framework(
       "Sources/**/*.m",
       "Sources/**/*.swift",
       "Sources/ZLPhotoBrowser.h"
-    ]
+    ],
+    allow_empty = True
   ),
   data = glob(
     [
       "Sources/*.bundle",
       "Sources/*.png"
-    ]
+    ],
+    allow_empty = True
   ),
   objc_defines = [
     "COCOAPODS=1"

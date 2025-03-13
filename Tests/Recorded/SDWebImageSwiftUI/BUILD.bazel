@@ -37,7 +37,8 @@ apple_framework(
       "SDWebImageSwiftUI/Classes/**/*.s",
       "SDWebImageSwiftUI/Classes/**/*.swift",
       "SDWebImageSwiftUI/Module/*.h"
-    ]
+    ],
+    allow_empty = True
   ),
   deps = [
     "//Tests/Pods/SDWebImage:SDWebImage"

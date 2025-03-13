@@ -39,7 +39,8 @@ apple_framework(
       "fishhook/**/*.h",
       "fishhook/**/*.m",
       "fishhook/**/*.mm"
-    ]
+    ],
+    allow_empty = True
   ),
   public_headers = glob(
     [
@@ -51,7 +52,8 @@ apple_framework(
       "FBRetainCycleDetector/Graph/FBObjectiveCGraphElement.h",
       "FBRetainCycleDetector/Graph/FBObjectiveCObject.h",
       "FBRetainCycleDetector/Graph/Specialization/FBObjectiveCNSCFTimer.h"
-    ]
+    ],
+    allow_empty = True
   ),
   objc_defines = [
     "COCOAPODS=1"

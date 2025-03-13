@@ -28,7 +28,8 @@ apple_framework(
       "Sources/**/*.h",
       "Sources/**/*.m",
       "Sources/**/*.swift"
-    ]
+    ],
+    allow_empty = True
   ),
   deps = [
     "//Tests/Pods/CwlPreconditionTesting:CwlPreconditionTesting"

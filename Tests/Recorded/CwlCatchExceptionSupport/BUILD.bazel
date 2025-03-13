@@ -26,7 +26,8 @@ apple_framework(
     [
       "Sources/CwlCatchExceptionSupport/CwlCatchException.m",
       "Sources/CwlCatchExceptionSupport/Include/CwlCatchException.h"
-    ]
+    ],
+    allow_empty = True
   ),
   objc_defines = [
     "COCOAPODS=1"

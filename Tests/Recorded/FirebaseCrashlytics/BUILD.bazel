@@ -45,12 +45,14 @@ apple_framework(
       "FirebaseCore/Extension/*.h",
       "FirebaseInstallations/Source/Library/Private/*.h",
       "Interop/Analytics/Public/*.h"
-    ]
+    ],
+    allow_empty = True
   ),
   public_headers = glob(
     [
       "Crashlytics/Crashlytics/Public/FirebaseCrashlytics/*.h"
-    ]
+    ],
+    allow_empty = True
   ),
   deps = [
     "//Tests/Pods/FirebaseCore:FirebaseCore",
@@ -172,14 +174,16 @@ ios_unit_test(
       "Crashlytics/UnitTests/*.m",
       "Crashlytics/UnitTests/*/*.h",
       "Crashlytics/UnitTests/*/*.m"
-    ]
+    ],
+    allow_empty = True
   ),
   data = glob(
     [
       "Crashlytics/UnitTests/*.clsrecord",
       "Crashlytics/UnitTests/Data/**",
       "Crashlytics/UnitTests/FIRCLSMachO/machO_data/**"
-    ]
+    ],
+    allow_empty = True
   ),
   deps = [
     ":FirebaseCrashlytics"

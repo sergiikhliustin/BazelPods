@@ -26,7 +26,8 @@ apple_framework(
   srcs = glob(
     [
       "FirebaseSharedSwift/Sources/**/*.swift"
-    ]
+    ],
+    allow_empty = True
   ),
   objc_defines = [
     "COCOAPODS=1"
@@ -107,7 +108,8 @@ ios_unit_test(
   srcs = glob(
     [
       "FirebaseSharedSwift/Tests/**/*.swift"
-    ]
+    ],
+    allow_empty = True
   ),
   deps = [
     ":FirebaseSharedSwift"

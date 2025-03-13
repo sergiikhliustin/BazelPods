@@ -25,12 +25,14 @@ apple_framework(
     [
       "BranchSDK/*.h",
       "BranchSDK/*.m"
-    ]
+    ],
+    allow_empty = True
   ),
   data = glob(
     [
       "BranchSDK/*.xcprivacy"
-    ]
+    ],
+    allow_empty = True
   ),
   objc_defines = [
     "COCOAPODS=1"

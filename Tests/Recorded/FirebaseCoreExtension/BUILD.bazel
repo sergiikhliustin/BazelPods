@@ -26,12 +26,14 @@ apple_framework(
     [
       "FirebaseCore/Extension/*.h",
       "FirebaseCore/Extension/*.m"
-    ]
+    ],
+    allow_empty = True
   ),
   public_headers = glob(
     [
       "FirebaseCore/Extension/*.h"
-    ]
+    ],
+    allow_empty = True
   ),
   deps = [
     "//Tests/Pods/FirebaseCore:FirebaseCore"

@@ -159,14 +159,16 @@ apple_framework(
       "src/wherecode.c",
       "src/whereexpr.c",
       "src/window.c"
-    ]
+    ],
+    allow_empty = True
   ),
   public_headers = glob(
     [
       "ext/fts3/fts3_tokenizer.h",
       "sqlite3.h",
       "src/sqlite3_wcdb.h"
-    ]
+    ],
+    allow_empty = True
   ),
   objc_defines = [
     "COCOAPODS=1",

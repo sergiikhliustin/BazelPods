@@ -39,7 +39,8 @@ apple_framework(
       "Logan/iOS/*.swift",
       "Logan/mbedtls/**/*.c",
       "Logan/mbedtls/**/*.h"
-    ]
+    ],
+    allow_empty = True
   ),
   public_headers = glob(
     [
@@ -47,12 +48,14 @@ apple_framework(
     ],
     exclude = [
       "Logan/mbedtls/**/*.h"
-    ]
+    ],
+    allow_empty = True
   ),
   private_headers = glob(
     [
       "Logan/mbedtls/**/*.h"
-    ]
+    ],
+    allow_empty = True
   ),
   objc_defines = [
     "COCOAPODS=1"

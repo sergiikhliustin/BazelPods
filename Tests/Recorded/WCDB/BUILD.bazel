@@ -63,7 +63,8 @@ apple_framework(
       "src/swift/**/*.m",
       "src/swift/**/*.mm",
       "src/swift/**/*.swift"
-    ]
+    ],
+    allow_empty = True
   ),
   public_headers = glob(
     [
@@ -155,7 +156,8 @@ apple_framework(
       "src/bridge/cppbridge/**/*.h",
       "src/bridge/objcbridge/WCTAPIBridge.h",
       "src/bridge/winqbridge/**/*.h"
-    ]
+    ],
+    allow_empty = True
   ),
   private_headers = glob(
     [
@@ -164,7 +166,8 @@ apple_framework(
       "src/bridge/cppbridge/**/*.h",
       "src/bridge/objcbridge/WCTAPIBridge.h",
       "src/bridge/winqbridge/**/*.h"
-    ]
+    ],
+    allow_empty = True
   ),
   deps = [
     "//Tests/Pods/WCDBOptimizedSQLCipher:WCDBOptimizedSQLCipher"

@@ -27,7 +27,8 @@ apple_framework(
       "Sources/NIOConcurrencyHelpers/**/*.c",
       "Sources/NIOConcurrencyHelpers/**/*.h",
       "Sources/NIOConcurrencyHelpers/**/*.swift"
-    ]
+    ],
+    allow_empty = True
   ),
   deps = [
     "//Tests/Pods/CNIOAtomics:CNIOAtomics"

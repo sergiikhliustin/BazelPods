@@ -144,7 +144,8 @@ apple_framework(
       "AppboyUI/ABKUIUtils/**/*.mm",
       "AppboyUI/ABKUIUtils/**/*.s",
       "AppboyUI/ABKUIUtils/**/*.swift"
-    ]
+    ],
+    allow_empty = True
   ),
   deps = [
     "//Tests/Pods/SDWebImage:SDWebImage",
@@ -226,7 +227,8 @@ precompiled_apple_resource_bundle(
     [
       "AppboyKit/Appboy.bundle/*.lproj",
       "AppboyKit/Appboy.bundle/*.txt"
-    ]
+    ],
+    allow_empty = True
   )
 )
 precompiled_apple_resource_bundle(
@@ -239,7 +241,8 @@ precompiled_apple_resource_bundle(
   resources = glob(
     [
       "AppboyUI/ABKContentCards/Resources/**/**"
-    ]
+    ],
+    allow_empty = True
   )
 )
 precompiled_apple_resource_bundle(
@@ -252,7 +255,8 @@ precompiled_apple_resource_bundle(
   resources = glob(
     [
       "AppboyUI/ABKInAppMessage/Resources/**"
-    ]
+    ],
+    allow_empty = True
   )
 )
 precompiled_apple_resource_bundle(
@@ -265,7 +269,8 @@ precompiled_apple_resource_bundle(
   resources = glob(
     [
       "AppboyUI/ABKNewsFeed/Resources/**/**"
-    ]
+    ],
+    allow_empty = True
   )
 )
 apple_static_xcframework_import(
@@ -273,7 +278,8 @@ apple_static_xcframework_import(
   xcframework_imports = glob(
     [
       "AppboyKit/AppboyKitLibrary.xcframework/**"
-    ]
+    ],
+    allow_empty = True
   ),
   visibility = [
     "//visibility:public"

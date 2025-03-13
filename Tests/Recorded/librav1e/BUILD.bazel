@@ -82,7 +82,8 @@ apple_static_framework_import(
   framework_imports = glob(
     [
       "iOS/librav1e.framework/**"
-    ]
+    ],
+    allow_empty = True
   ),
   visibility = [
     "//visibility:public"
@@ -93,7 +94,8 @@ apple_static_framework_import(
   framework_imports = glob(
     [
       "iOS/._ios_sim_arm64_/librav1e.framework/**"
-    ]
+    ],
+    allow_empty = True
   ),
   visibility = [
     "//visibility:public"

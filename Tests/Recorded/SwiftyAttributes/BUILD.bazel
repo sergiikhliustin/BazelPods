@@ -26,7 +26,8 @@ apple_framework(
     [
       "SwiftyAttributes/Sources/common/*.swift",
       "SwiftyAttributes/Sources/iOS_tvOS/*.swift"
-    ]
+    ],
+    allow_empty = True
   ),
   objc_defines = [
     "COCOAPODS=1"

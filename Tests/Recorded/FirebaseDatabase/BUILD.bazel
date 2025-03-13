@@ -33,12 +33,14 @@ apple_framework(
       "FirebaseDatabase/Sources/third_party/SocketRocket/fbase64.c",
       "FirebaseDatabase/Sources/third_party/Wrap-leveldb/APLevelDB.mm",
       "FirebaseDatabase/Swift/Sources/**/*.swift"
-    ]
+    ],
+    allow_empty = True
   ),
   public_headers = glob(
     [
       "FirebaseDatabase/Sources/Public/FirebaseDatabase/*.h"
-    ]
+    ],
+    allow_empty = True
   ),
   deps = [
     "//Tests/Pods/FirebaseAppCheckInterop:FirebaseAppCheckInterop",
@@ -166,7 +168,8 @@ ios_unit_test(
       "SharedTestUtilities/FIRComponentTestUtilities.m",
       "SharedTestUtilities/FIROptionsMock.h",
       "SharedTestUtilities/FIROptionsMock.m"
-    ]
+    ],
+    allow_empty = True
   ),
   data = [
     "FirebaseDatabase/Tests/Resources/GoogleService-Info.plist",
@@ -230,7 +233,8 @@ ios_unit_test(
       "SharedTestUtilities/FIRComponentTestUtilities.m",
       "SharedTestUtilities/FIROptionsMock.h",
       "SharedTestUtilities/FIROptionsMock.m"
-    ]
+    ],
+    allow_empty = True
   ),
   data = [
     "FirebaseDatabase/Tests/Resources/GoogleService-Info.plist"

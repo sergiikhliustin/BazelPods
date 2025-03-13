@@ -36,7 +36,8 @@ apple_framework(
       "Sources/**/*.mm",
       "Sources/**/*.s",
       "Sources/**/*.swift"
-    ]
+    ],
+    allow_empty = True
   ),
   objc_defines = [
     "COCOAPODS=1"

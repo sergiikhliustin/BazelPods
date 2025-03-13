@@ -33,12 +33,14 @@ apple_framework(
       "FirebasePerformance/Sources/**/*.h",
       "FirebasePerformance/Sources/**/*.m",
       "FirebaseRemoteConfig/Sources/Private/*.h"
-    ]
+    ],
+    allow_empty = True
   ),
   public_headers = glob(
     [
       "FirebasePerformance/Sources/Public/FirebasePerformance/*.h"
-    ]
+    ],
+    allow_empty = True
   ),
   deps = [
     "//Tests/Pods/FirebaseCore:FirebaseCore",
@@ -156,12 +158,14 @@ ios_unit_test(
       "FirebasePerformance/Tests/Unit/**/*.m",
       "SharedTestUtilities/*.h",
       "SharedTestUtilities/*.m"
-    ]
+    ],
+    allow_empty = True
   ),
   data = glob(
     [
       "FirebasePerformance/Tests/Unit/Server/*File"
-    ]
+    ],
+    allow_empty = True
   ),
   deps = [
     "//Tests/Pods/GCDWebServer:GCDWebServer",
@@ -365,13 +369,15 @@ ios_application(
     [
       "FirebasePerformance/Tests/TestApp/Source/**/*.h",
       "FirebasePerformance/Tests/TestApp/Source/**/*.m"
-    ]
+    ],
+    allow_empty = True
   ),
   data = glob(
     [
       "FirebasePerformance/Tests/TestApp/Plists/Prod/**/*.plist",
       "FirebasePerformance/Tests/TestApp/Resources/**"
-    ]
+    ],
+    allow_empty = True
   ),
   deps = [
     ":FirebasePerformance"

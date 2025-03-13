@@ -36,7 +36,8 @@ apple_framework(
       "RouteComposer/Classes/**/*.mm",
       "RouteComposer/Classes/**/*.s",
       "RouteComposer/Classes/**/*.swift"
-    ]
+    ],
+    allow_empty = True
   ),
   objc_defines = [
     "COCOAPODS=1"

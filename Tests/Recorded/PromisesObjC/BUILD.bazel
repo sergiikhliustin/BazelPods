@@ -26,7 +26,8 @@ apple_framework(
     [
       "Sources/FBLPromises/**/*.h",
       "Sources/FBLPromises/**/*.m"
-    ]
+    ],
+    allow_empty = True
   ),
   public_headers = glob(
     [
@@ -34,12 +35,14 @@ apple_framework(
     ],
     exclude = [
       "Sources/FBLPromises/include/FBLPromisePrivate.h"
-    ]
+    ],
+    allow_empty = True
   ),
   private_headers = glob(
     [
       "Sources/FBLPromises/include/FBLPromisePrivate.h"
-    ]
+    ],
+    allow_empty = True
   ),
   objc_defines = [
     "COCOAPODS=1"
@@ -121,7 +124,8 @@ ios_unit_test(
     [
       "Sources/FBLPromisesTestHelpers/include/FBLPromisesTestHelpers.h",
       "Tests/FBLPromisesTests/*.m"
-    ]
+    ],
+    allow_empty = True
   ),
   deps = [
     ":PromisesObjC"
@@ -168,7 +172,8 @@ ios_unit_test(
     [
       "Sources/FBLPromisesTestHelpers/include/FBLPromisesTestHelpers.h",
       "Tests/FBLPromisesPerformanceTests/*.m"
-    ]
+    ],
+    allow_empty = True
   ),
   deps = [
     ":PromisesObjC"

@@ -36,7 +36,8 @@ apple_framework(
       "runtime/Swift/Sources/Antlr4/**/*.mm",
       "runtime/Swift/Sources/Antlr4/**/*.s",
       "runtime/Swift/Sources/Antlr4/**/*.swift"
-    ]
+    ],
+    allow_empty = True
   ),
   objc_defines = [
     "COCOAPODS=1"

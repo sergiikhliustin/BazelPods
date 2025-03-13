@@ -27,12 +27,14 @@ apple_framework(
     [
       "Sources/Core/**/*.h",
       "Sources/Core/**/*.m"
-    ]
+    ],
+    allow_empty = True
   ),
   public_headers = glob(
     [
       "Sources/Core/Public/GoogleAPIClientForREST/*.h"
-    ]
+    ],
+    allow_empty = True
   ),
   deps = [
     "//Tests/Pods/GTMSessionFetcher:GTMSessionFetcher",
@@ -74,7 +76,8 @@ precompiled_apple_resource_bundle(
   resources = glob(
     [
       "Sources/Core/Resources/PrivacyInfo.xcprivacy"
-    ]
+    ],
+    allow_empty = True
   )
 )
 genrule(
@@ -173,7 +176,8 @@ ios_unit_test(
     [
       "UnitTests/*.h",
       "UnitTests/*.m"
-    ]
+    ],
+    allow_empty = True
   ),
   deps = [
     ":GoogleAPIClientForREST"

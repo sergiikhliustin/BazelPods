@@ -27,7 +27,8 @@ apple_framework(
     [
       "LineSDK/LineSDK/**/*.swift",
       "LineSDK/LineSDK/LineSDK.h"
-    ]
+    ],
+    allow_empty = True
   ),
   deps = [
     ":LineSDK_LineSDK_Bundle"
@@ -77,7 +78,8 @@ precompiled_apple_resource_bundle(
   resources = glob(
     [
       "LineSDK/LineSDK/Assets.xcassets/**"
-    ]
+    ],
+    allow_empty = True
   )
 )
 genrule(

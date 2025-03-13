@@ -36,7 +36,8 @@ apple_framework(
       "Sources/JXPhotoBrowser/*.mm",
       "Sources/JXPhotoBrowser/*.s",
       "Sources/JXPhotoBrowser/*.swift"
-    ]
+    ],
+    allow_empty = True
   ),
   objc_defines = [
     "COCOAPODS=1"

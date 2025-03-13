@@ -26,7 +26,8 @@ apple_framework(
   srcs = glob(
     [
       "IQKeyboardManagerSwift/**/*.swift"
-    ]
+    ],
+    allow_empty = True
   ),
   deps = [
     ":IQKeyboardManagerSwift_IQKeyboardManagerSwift_Bundle"
@@ -76,7 +77,8 @@ precompiled_apple_resource_bundle(
   resources = glob(
     [
       "IQKeyboardManagerSwift/PrivacyInfo.xcprivacy"
-    ]
+    ],
+    allow_empty = True
   )
 )
 genrule(

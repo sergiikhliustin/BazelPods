@@ -36,7 +36,8 @@ apple_framework(
       "Toast/**/*.mm",
       "Toast/**/*.s",
       "Toast/**/*.swift"
-    ]
+    ],
+    allow_empty = True
   ),
   data = [
     "Toast/Resources/PrivacyInfo.xcprivacy"

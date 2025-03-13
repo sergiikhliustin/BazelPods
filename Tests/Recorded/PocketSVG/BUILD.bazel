@@ -47,7 +47,8 @@ apple_framework(
       "Sources/include/**/*.mm",
       "Sources/include/**/*.s",
       "Sources/include/**/*.swift"
-    ]
+    ],
+    allow_empty = True
   ),
   data = [
     "Sources/Resources/SVGColors.plist"

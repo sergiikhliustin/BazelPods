@@ -38,13 +38,15 @@ apple_framework(
       "iOS/MMKV/MMKV/*.h",
       "iOS/MMKV/MMKV/*.hpp",
       "iOS/MMKV/MMKV/*.mm"
-    ]
+    ],
+    allow_empty = True
   ),
   public_headers = glob(
     [
       "iOS/MMKV/MMKV/MMKV.h",
       "iOS/MMKV/MMKV/MMKVHandler.h"
-    ]
+    ],
+    allow_empty = True
   ),
   deps = [
     "//Tests/Pods/MMKVCore:MMKVCore"

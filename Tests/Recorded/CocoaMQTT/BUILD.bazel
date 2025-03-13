@@ -25,7 +25,8 @@ apple_framework(
   srcs = glob(
     [
       "Source/*.swift"
-    ]
+    ],
+    allow_empty = True
   ),
   deps = [
     "//Tests/Pods/MqttCocoaAsyncSocket:MqttCocoaAsyncSocket"

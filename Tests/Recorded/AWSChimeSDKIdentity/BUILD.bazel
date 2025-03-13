@@ -25,7 +25,8 @@ apple_framework(
     [
       "AWSChimeSDKIdentity/*.h",
       "AWSChimeSDKIdentity/*.m"
-    ]
+    ],
+    allow_empty = True
   ),
   deps = [
     "//Tests/Pods/AWSCore:AWSCore"

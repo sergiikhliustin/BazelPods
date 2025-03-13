@@ -28,7 +28,8 @@ apple_framework(
       "ObjC/*.h",
       "ObjC/*.m",
       "Sources/**/*.swift"
-    ]
+    ],
+    allow_empty = True
   ),
   deps = [
     ":XLPagerTabStrip_XLPagerTabStrip_Bundle"
@@ -73,7 +74,8 @@ precompiled_apple_resource_bundle(
   resources = glob(
     [
       "Sources/**/ButtonCell.xib"
-    ]
+    ],
+    allow_empty = True
   )
 )
 genrule(

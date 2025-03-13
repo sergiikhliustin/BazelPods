@@ -32,7 +32,8 @@ apple_framework(
       "pb_decode.h",
       "pb_encode.c",
       "pb_encode.h"
-    ]
+    ],
+    allow_empty = True
   ),
   public_headers = glob(
     [
@@ -41,7 +42,8 @@ apple_framework(
       "pb_common.h",
       "pb_decode.h",
       "pb_encode.h"
-    ]
+    ],
+    allow_empty = True
   ),
   objc_defines = [
     "COCOAPODS=1",

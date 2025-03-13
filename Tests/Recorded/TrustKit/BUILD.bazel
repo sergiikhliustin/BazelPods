@@ -35,7 +35,8 @@ apple_framework(
       "TrustKit/**/*.mm",
       "TrustKit/**/*.s",
       "TrustKit/**/*.swift"
-    ]
+    ],
+    allow_empty = True
   ),
   public_headers = glob(
     [
@@ -45,7 +46,8 @@ apple_framework(
       "TrustKit/public/TSKTrustDecision.h",
       "TrustKit/public/TSKTrustKitConfig.h",
       "TrustKit/public/TrustKit.h"
-    ]
+    ],
+    allow_empty = True
   ),
   objc_defines = [
     "COCOAPODS=1"

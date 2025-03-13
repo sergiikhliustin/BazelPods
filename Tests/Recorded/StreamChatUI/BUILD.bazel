@@ -28,7 +28,8 @@ apple_framework(
       "Sources/StreamChatUI/**/*.swift",
       "Sources/StreamNuke/**/*.swift",
       "Sources/StreamSwiftyGif/**/*.swift"
-    ]
+    ],
+    allow_empty = True
   ),
   deps = [
     "//Tests/Pods/StreamChat:StreamChat",
@@ -83,7 +84,8 @@ precompiled_apple_resource_bundle(
   resources = glob(
     [
       "Sources/StreamChatUI/Resources/**/**"
-    ]
+    ],
+    allow_empty = True
   )
 )
 genrule(

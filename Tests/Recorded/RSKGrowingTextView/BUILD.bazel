@@ -26,7 +26,8 @@ apple_framework(
     [
       "RSKGrowingTextView/*.h",
       "RSKGrowingTextView/*.swift"
-    ]
+    ],
+    allow_empty = True
   ),
   deps = [
     "//Tests/Pods/RSKPlaceholderTextView:RSKPlaceholderTextView"

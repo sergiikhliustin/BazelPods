@@ -37,7 +37,8 @@ apple_framework(
       "Classes/**/*.mm",
       "Classes/**/*.s",
       "Classes/**/*.swift"
-    ]
+    ],
+    allow_empty = True
   ),
   deps = [
     "//Tests/Pods/SwiftyGif:SwiftyGif"

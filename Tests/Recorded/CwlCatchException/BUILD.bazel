@@ -26,7 +26,8 @@ apple_framework(
   srcs = glob(
     [
       "Sources/CwlCatchException/**/*.swift"
-    ]
+    ],
+    allow_empty = True
   ),
   deps = [
     "//Tests/Pods/CwlCatchExceptionSupport:CwlCatchExceptionSupport"
@@ -110,7 +111,8 @@ ios_unit_test(
   srcs = glob(
     [
       "Tests/**/*.swift"
-    ]
+    ],
+    allow_empty = True
   ),
   deps = [
     ":CwlCatchException"

@@ -30,7 +30,8 @@ apple_framework(
       "Source/SwiftyDropbox/Shared/**/*.h",
       "Source/SwiftyDropbox/Shared/**/*.m",
       "Source/SwiftyDropbox/Shared/**/*.swift"
-    ]
+    ],
+    allow_empty = True
   ),
   objc_defines = [
     "COCOAPODS=1"

@@ -26,7 +26,8 @@ apple_framework(
     [
       "PhoneNumberKit/*.swift",
       "PhoneNumberKit/UI/*.swift"
-    ]
+    ],
+    allow_empty = True
   ),
   data = [
     "PhoneNumberKit/Resources/PhoneNumberMetadata.json"

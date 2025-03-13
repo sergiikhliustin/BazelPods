@@ -45,7 +45,8 @@ apple_framework(
   srcs = glob(
     [
       "binding/ios/*.swift"
-    ]
+    ],
+    allow_empty = True
   ),
   deps = [
     "//Tests/Pods/ios-voice-processor:ios-voice-processor",
@@ -100,7 +101,8 @@ precompiled_apple_resource_bundle(
   resources = glob(
     [
       "lib/common/rhino_params.pv"
-    ]
+    ],
+    allow_empty = True
   )
 )
 apple_dynamic_xcframework_import(
@@ -108,7 +110,8 @@ apple_dynamic_xcframework_import(
   xcframework_imports = glob(
     [
       "lib/ios/PvRhino.xcframework/**"
-    ]
+    ],
+    allow_empty = True
   ),
   visibility = [
     "//visibility:public"

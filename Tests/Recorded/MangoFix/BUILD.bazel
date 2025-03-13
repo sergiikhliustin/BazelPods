@@ -56,7 +56,8 @@ apple_framework(
       "MangoFix/**/*.c",
       "MangoFix/**/*.h",
       "MangoFix/**/*.m"
-    ]
+    ],
+    allow_empty = True
   ),
   deps = [
     "//Tests/Pods/symdl:symdl"

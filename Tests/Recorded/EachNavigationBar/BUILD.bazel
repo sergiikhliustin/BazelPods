@@ -37,7 +37,8 @@ apple_framework(
       "EachNavigationBar/Classes/**/*.mm",
       "EachNavigationBar/Classes/**/*.s",
       "EachNavigationBar/Classes/**/*.swift"
-    ]
+    ],
+    allow_empty = True
   ),
   deps = [
     ":EachNavigationBar_EachNavigationBar_Bundle"
@@ -81,7 +82,8 @@ precompiled_apple_resource_bundle(
   resources = glob(
     [
       "EachNavigationBar/Assets/*.xcassets/**"
-    ]
+    ],
+    allow_empty = True
   )
 )
 genrule(

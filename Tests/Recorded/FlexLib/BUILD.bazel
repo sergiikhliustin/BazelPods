@@ -51,7 +51,8 @@ apple_framework(
       "FlexLib/Classes/yoga/**/*.c",
       "FlexLib/Classes/yoga/**/*.cpp",
       "FlexLib/Classes/yoga/**/*.h"
-    ]
+    ],
+    allow_empty = True
   ),
   public_headers = glob(
     [
@@ -61,7 +62,8 @@ apple_framework(
       "FlexLib/Classes/yoga/YGStyle.h",
       "FlexLib/Classes/yoga/YGValue.h",
       "FlexLib/Classes/yoga/Yoga.h"
-    ]
+    ],
+    allow_empty = True
   ),
   deps = [
     ":FlexLib_FlexLib_Bundle"
@@ -113,7 +115,8 @@ precompiled_apple_resource_bundle(
   resources = glob(
     [
       "FlexLib/Assets/**"
-    ]
+    ],
+    allow_empty = True
   )
 )
 genrule(

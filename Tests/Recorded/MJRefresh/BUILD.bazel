@@ -25,7 +25,8 @@ apple_framework(
     [
       "MJRefresh/**/*.h",
       "MJRefresh/**/*.m"
-    ]
+    ],
+    allow_empty = True
   ),
   data = [
     "MJRefresh/MJRefresh.bundle"

@@ -68,7 +68,8 @@ apple_framework(
       "MTHawkeye/Utils/**/*.h",
       "MTHawkeye/Utils/**/*.m",
       "MTHawkeye/Utils/**/*.mm"
-    ]
+    ],
+    allow_empty = True
   ),
   public_headers = glob(
     [
@@ -90,7 +91,8 @@ apple_framework(
       "MTHawkeye/TimeConsumingPlugins/UITimeProfiler/Core/*.h",
       "MTHawkeye/UISkeleton/**/*.h",
       "MTHawkeye/Utils/*.h"
-    ]
+    ],
+    allow_empty = True
   ),
   deps = [
     "//Tests/Pods/CocoaLumberjack:CocoaLumberjack",

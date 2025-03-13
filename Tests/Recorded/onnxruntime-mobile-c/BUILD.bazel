@@ -34,7 +34,8 @@ apple_framework(
   public_headers = glob(
     [
       "Headers/*.h"
-    ]
+    ],
+    allow_empty = True
   ),
   deps = select(
     {
@@ -94,7 +95,8 @@ apple_static_xcframework_import(
   xcframework_imports = glob(
     [
       "onnxruntime.xcframework/**"
-    ]
+    ],
+    allow_empty = True
   ),
   visibility = [
     "//visibility:public"

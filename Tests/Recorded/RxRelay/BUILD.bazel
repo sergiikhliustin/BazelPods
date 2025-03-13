@@ -27,7 +27,8 @@ apple_framework(
       "RxRelay/**/*.h",
       "RxRelay/**/*.m",
       "RxRelay/**/*.swift"
-    ]
+    ],
+    allow_empty = True
   ),
   deps = [
     "//Tests/Pods/RxSwift:RxSwift"

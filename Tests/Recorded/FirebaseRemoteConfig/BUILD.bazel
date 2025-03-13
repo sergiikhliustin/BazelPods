@@ -33,12 +33,14 @@ apple_framework(
       "FirebaseRemoteConfig/Sources/**/*.m",
       "FirebaseRemoteConfig/Swift/**/*.swift",
       "Interop/Analytics/Public/*.h"
-    ]
+    ],
+    allow_empty = True
   ),
   public_headers = glob(
     [
       "FirebaseRemoteConfig/Sources/Public/FirebaseRemoteConfig/*.h"
-    ]
+    ],
+    allow_empty = True
   ),
   deps = [
     "//Tests/Pods/FirebaseABTesting:FirebaseABTesting",
@@ -147,7 +149,8 @@ ios_unit_test(
       "FirebaseRemoteConfig/Tests/Unit/RCNTestUtilities.h",
       "FirebaseRemoteConfig/Tests/Unit/RCNTestUtilities.m",
       "FirebaseRemoteConfig/Tests/Unit/RCNUserDefaultsManagerTests.m"
-    ]
+    ],
+    allow_empty = True
   ),
   data = [
     "FirebaseRemoteConfig/Tests/Unit/Defaults-testInfo.plist",

@@ -37,7 +37,8 @@ apple_framework(
       "Sources/**/*.mm",
       "Sources/**/*.s",
       "Sources/**/*.swift"
-    ]
+    ],
+    allow_empty = True
   ),
   deps = [
     ":Lottie_Lottie_Privacy_Bundle"
@@ -89,7 +90,8 @@ precompiled_apple_resource_bundle(
   resources = glob(
     [
       "Sources/PrivacyInfo.xcprivacy"
-    ]
+    ],
+    allow_empty = True
   )
 )
 genrule(

@@ -28,7 +28,8 @@ apple_framework(
       "Stripe3DS2/Stripe3DS2/**/*.h",
       "Stripe3DS2/Stripe3DS2/**/*.m",
       "StripePayments/StripePayments/Source/**/*.swift"
-    ]
+    ],
+    allow_empty = True
   ),
   deps = [
     "//Tests/Pods/StripeCore:StripeCore",
@@ -86,7 +87,8 @@ precompiled_apple_resource_bundle(
       "Stripe3DS2/Stripe3DS2/Resources/**/*.lproj",
       "Stripe3DS2/Stripe3DS2/Resources/**/*.png",
       "Stripe3DS2/Stripe3DS2/Resources/**/*.xcassets/**"
-    ]
+    ],
+    allow_empty = True
   )
 )
 precompiled_apple_resource_bundle(
@@ -99,7 +101,8 @@ precompiled_apple_resource_bundle(
   resources = glob(
     [
       "StripePayments/StripePayments/Resources/**/*.lproj"
-    ]
+    ],
+    allow_empty = True
   )
 )
 genrule(

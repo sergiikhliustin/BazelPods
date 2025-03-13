@@ -37,7 +37,8 @@ apple_framework(
       "Aztec/Classes/**/*.mm",
       "Aztec/Classes/**/*.s",
       "Aztec/Classes/**/*.swift"
-    ]
+    ],
+    allow_empty = True
   ),
   deps = [
     ":Aztec_WordPress-Aztec-iOS_Bundle"
@@ -94,7 +95,8 @@ precompiled_apple_resource_bundle(
   resources = glob(
     [
       "Aztec/Assets/**/**"
-    ]
+    ],
+    allow_empty = True
   )
 )
 genrule(

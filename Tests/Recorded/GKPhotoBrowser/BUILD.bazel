@@ -71,7 +71,8 @@ apple_framework(
       "GKPhotoBrowser/SDWebImage/**/*.mm",
       "GKPhotoBrowser/SDWebImage/**/*.s",
       "GKPhotoBrowser/SDWebImage/**/*.swift"
-    ]
+    ],
+    allow_empty = True
   ),
   data = [
     "GKPhotoBrowser/GKPhotoBrowser.bundle"

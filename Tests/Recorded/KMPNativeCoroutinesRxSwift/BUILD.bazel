@@ -25,7 +25,8 @@ apple_framework(
   srcs = glob(
     [
       "KMPNativeCoroutinesRxSwift/**/*.swift"
-    ]
+    ],
+    allow_empty = True
   ),
   deps = [
     "//Tests/Pods/KMPNativeCoroutinesCore:KMPNativeCoroutinesCore",

@@ -27,7 +27,8 @@ apple_framework(
       "Platforms/iOS/*.h",
       "Platforms/iOS/*.swift",
       "Sources/**/*.swift"
-    ]
+    ],
+    allow_empty = True
   ),
   deps = [
     "//Tests/Pods/Logboard:Logboard"

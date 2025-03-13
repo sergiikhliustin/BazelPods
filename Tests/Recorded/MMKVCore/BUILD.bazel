@@ -63,7 +63,8 @@ apple_framework(
       "Core/aes/openssl/*.s",
       "Core/aes/openssl/*.swift",
       "Core/crc32/*.h"
-    ]
+    ],
+    allow_empty = True
   ),
   public_headers = glob(
     [
@@ -76,7 +77,8 @@ apple_framework(
       "Core/ThreadLock.h",
       "Core/aes/openssl/openssl_md5.h",
       "Core/aes/openssl/openssl_opensslconf.h"
-    ]
+    ],
+    allow_empty = True
   ),
   objc_defines = [
     "COCOAPODS=1"

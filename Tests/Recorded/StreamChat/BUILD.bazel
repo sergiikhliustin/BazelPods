@@ -27,7 +27,8 @@ apple_framework(
     [
       "Sources/StreamChat/**/*.swift",
       "Sources/StreamStarscream/**/*.swift"
-    ]
+    ],
+    allow_empty = True
   ),
   deps = [
     ":StreamChat_StreamChat_Bundle"
@@ -81,7 +82,8 @@ precompiled_apple_resource_bundle(
   resources = glob(
     [
       "Sources/StreamChat/**/*.xcdatamodeld/**"
-    ]
+    ],
+    allow_empty = True
   )
 )
 genrule(

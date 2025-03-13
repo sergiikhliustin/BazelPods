@@ -27,7 +27,8 @@ apple_framework(
       "Sources/**/*.h",
       "Sources/**/*.m",
       "Sources/**/*.swift"
-    ]
+    ],
+    allow_empty = True
   ),
   public_headers = glob(
     [
@@ -35,7 +36,8 @@ apple_framework(
       "Sources/QuickObjectiveC/DSL/QCKDSL.h",
       "Sources/QuickObjectiveC/Quick.h",
       "Sources/QuickObjectiveC/QuickSpec.h"
-    ]
+    ],
+    allow_empty = True
   ),
   objc_defines = [
     "COCOAPODS=1"

@@ -77,7 +77,8 @@ apple_framework(
       "QMUIKit/UIKitExtensions/QMUIBarProtocol/**/*.mm",
       "QMUIKit/UIKitExtensions/QMUIBarProtocol/**/*.s",
       "QMUIKit/UIKitExtensions/QMUIBarProtocol/**/*.swift"
-    ]
+    ],
+    allow_empty = True
   ),
   deps = [
     ":QMUIKit_QMUIResources_Bundle"
@@ -129,7 +130,8 @@ precompiled_apple_resource_bundle(
   resources = glob(
     [
       "QMUIKit/QMUIResources/**"
-    ]
+    ],
+    allow_empty = True
   )
 )
 genrule(

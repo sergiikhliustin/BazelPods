@@ -27,7 +27,8 @@ apple_framework(
       "Sources/Tabman/**/*.h",
       "Sources/Tabman/**/*.m",
       "Sources/Tabman/**/*.swift"
-    ]
+    ],
+    allow_empty = True
   ),
   deps = [
     "//Tests/Pods/Pageboy:Pageboy"
