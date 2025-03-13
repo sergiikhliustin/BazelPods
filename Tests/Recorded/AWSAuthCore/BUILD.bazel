@@ -25,12 +25,14 @@ apple_framework(
     [
       "AWSAuthSDK/Sources/AWSAuthCore/*.h",
       "AWSAuthSDK/Sources/AWSAuthCore/*.m"
-    ]
+    ],
+    allow_empty = True
   ),
   public_headers = glob(
     [
       "AWSAuthSDK/Sources/AWSAuthCore/*.h"
-    ]
+    ],
+    allow_empty = True
   ),
   deps = [
     "//Tests/Pods/AWSCore:AWSCore"

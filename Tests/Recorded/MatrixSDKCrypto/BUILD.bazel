@@ -44,7 +44,8 @@ apple_framework(
   srcs = glob(
     [
       "Sources/**/*.swift"
-    ]
+    ],
+    allow_empty = True
   ),
   deps = select(
     {
@@ -91,7 +92,8 @@ apple_static_xcframework_import(
   xcframework_imports = glob(
     [
       "MatrixSDKCryptoFFI.xcframework/**"
-    ]
+    ],
+    allow_empty = True
   ),
   visibility = [
     "//visibility:public"

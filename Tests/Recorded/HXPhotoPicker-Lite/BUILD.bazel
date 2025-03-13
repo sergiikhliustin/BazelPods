@@ -25,12 +25,14 @@ apple_framework(
   srcs = glob(
     [
       "Sources/HXPhotoPicker/Core/**/*.swift"
-    ]
+    ],
+    allow_empty = True
   ),
   data = glob(
     [
       "Sources/HXPhotoPicker/Resources/*.bundle"
-    ]
+    ],
+    allow_empty = True
   ),
   objc_defines = [
     "COCOAPODS=1"

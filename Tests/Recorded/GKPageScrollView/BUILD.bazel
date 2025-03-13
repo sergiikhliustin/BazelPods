@@ -26,7 +26,8 @@ apple_framework(
     [
       "Sources/GKPageScrollView/*.h",
       "Sources/GKPageScrollView/*.m"
-    ]
+    ],
+    allow_empty = True
   ),
   objc_defines = [
     "COCOAPODS=1"

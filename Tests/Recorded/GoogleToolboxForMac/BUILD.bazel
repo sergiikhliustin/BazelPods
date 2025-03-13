@@ -49,12 +49,14 @@ apple_framework(
       "Foundation/GTMStringEncoding.h",
       "Foundation/GTMStringEncoding.m",
       "GTMDefines.h"
-    ]
+    ],
+    allow_empty = True
   ),
   public_headers = glob(
     [
       "GTMDefines.h"
-    ]
+    ],
+    allow_empty = True
   ),
   deps = [
     ":GoogleToolboxForMac_GoogleToolboxForMac_Logger_Privacy_Bundle",
@@ -102,7 +104,8 @@ precompiled_apple_resource_bundle(
   resources = glob(
     [
       "Resources/Logger/PrivacyInfo.xcprivacy"
-    ]
+    ],
+    allow_empty = True
   )
 )
 precompiled_apple_resource_bundle(
@@ -115,7 +118,8 @@ precompiled_apple_resource_bundle(
   resources = glob(
     [
       "Resources/Base/PrivacyInfo.xcprivacy"
-    ]
+    ],
+    allow_empty = True
   )
 )
 genrule(

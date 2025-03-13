@@ -26,7 +26,8 @@ apple_framework(
     [
       "Platform/**/*.swift",
       "RxBlocking/**/*.swift"
-    ]
+    ],
+    allow_empty = True
   ),
   deps = [
     "//Tests/Pods/RxSwift:RxSwift"

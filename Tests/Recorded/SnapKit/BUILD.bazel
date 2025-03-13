@@ -26,7 +26,8 @@ apple_framework(
   srcs = glob(
     [
       "Sources/*.swift"
-    ]
+    ],
+    allow_empty = True
   ),
   deps = [
     ":SnapKit_SnapKit_Privacy_Bundle"
@@ -70,7 +71,8 @@ precompiled_apple_resource_bundle(
   resources = glob(
     [
       "Sources/PrivacyInfo.xcprivacy"
-    ]
+    ],
+    allow_empty = True
   )
 )
 genrule(

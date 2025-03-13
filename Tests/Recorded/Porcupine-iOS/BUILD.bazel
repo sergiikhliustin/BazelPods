@@ -45,7 +45,8 @@ apple_framework(
   srcs = glob(
     [
       "binding/ios/*.swift"
-    ]
+    ],
+    allow_empty = True
   ),
   deps = [
     "//Tests/Pods/ios-voice-processor:ios-voice-processor",
@@ -114,7 +115,8 @@ precompiled_apple_resource_bundle(
       "resources/keyword_files/ios/picovoice_ios.ppn",
       "resources/keyword_files/ios/porcupine_ios.ppn",
       "resources/keyword_files/ios/terminator_ios.ppn"
-    ]
+    ],
+    allow_empty = True
   )
 )
 apple_dynamic_xcframework_import(
@@ -122,7 +124,8 @@ apple_dynamic_xcframework_import(
   xcframework_imports = glob(
     [
       "lib/ios/PvPorcupine.xcframework/**"
-    ]
+    ],
+    allow_empty = True
   ),
   visibility = [
     "//visibility:public"

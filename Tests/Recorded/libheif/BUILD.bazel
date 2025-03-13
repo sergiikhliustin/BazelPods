@@ -29,7 +29,8 @@ apple_framework(
       "libheif/plugins/decoder_libde265.c",
       "libheif/plugins/decoder_libde265.cc",
       "libheif/plugins/decoder_libde265.h"
-    ]
+    ],
+    allow_empty = True
   ),
   public_headers = glob(
     [
@@ -38,12 +39,14 @@ apple_framework(
     ],
     exclude = [
       "libheif/plugins/decoder_libde265.h"
-    ]
+    ],
+    allow_empty = True
   ),
   private_headers = glob(
     [
       "libheif/plugins/decoder_libde265.h"
-    ]
+    ],
+    allow_empty = True
   ),
   deps = [
     "//Tests/Pods/libde265:libde265"

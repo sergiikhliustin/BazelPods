@@ -30,7 +30,8 @@ apple_framework(
       "Source/SwiftyDropboxObjC/Shared/**/*.h",
       "Source/SwiftyDropboxObjC/Shared/**/*.m",
       "Source/SwiftyDropboxObjC/Shared/**/*.swift"
-    ]
+    ],
+    allow_empty = True
   ),
   deps = [
     "//Tests/Pods/SwiftyDropbox:SwiftyDropbox"

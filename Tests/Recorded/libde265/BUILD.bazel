@@ -29,13 +29,15 @@ apple_framework(
       "libde265/libde265/**/*.cpp",
       "libde265/libde265/**/*.h",
       "libde265/libde265/**/*.hpp"
-    ]
+    ],
+    allow_empty = True
   ),
   public_headers = glob(
     [
       "libde265/extra/libde265/de265-version.h",
       "libde265/libde265/de265.h"
-    ]
+    ],
+    allow_empty = True
   ),
   objc_defines = [
     "COCOAPODS=1",

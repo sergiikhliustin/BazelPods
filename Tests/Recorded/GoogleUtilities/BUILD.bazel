@@ -49,7 +49,8 @@ apple_framework(
       "GoogleUtilities/UserDefaults/**/*.m",
       "third_party/IsAppEncrypted/**/*.h",
       "third_party/IsAppEncrypted/**/*.m"
-    ]
+    ],
+    allow_empty = True
   ),
   public_headers = glob(
     [
@@ -63,7 +64,8 @@ apple_framework(
       "GoogleUtilities/Reachability/Public/GoogleUtilities/*.h",
       "GoogleUtilities/SwizzlerTestHelpers/Public/GoogleUtilities/*.h",
       "GoogleUtilities/UserDefaults/Public/GoogleUtilities/*.h"
-    ]
+    ],
+    allow_empty = True
   ),
   deps = [
     "//Tests/Pods/PromisesObjC:PromisesObjC"
@@ -164,7 +166,8 @@ ios_unit_test(
     [
       "GoogleUtilities/Tests/Unit/**/*.h",
       "GoogleUtilities/Tests/Unit/**/*.m"
-    ]
+    ],
+    allow_empty = True
   ),
   deps = [
     "//Tests/Pods/OCMock:OCMock",
@@ -355,7 +358,8 @@ ios_unit_test(
     [
       "GoogleUtilities/Tests/SwiftUnit/**/*.h",
       "GoogleUtilities/Tests/SwiftUnit/**/*.swift"
-    ]
+    ],
+    allow_empty = True
   ),
   deps = [
     ":GoogleUtilities"

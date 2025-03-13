@@ -29,13 +29,15 @@ apple_framework(
       "Sources/Core/**/*.m",
       "Sources/Full/**/*.h",
       "Sources/Full/**/*.m"
-    ]
+    ],
+    allow_empty = True
   ),
   public_headers = glob(
     [
       "Sources/Core/Public/GTMSessionFetcher/*.h",
       "Sources/Full/Public/GTMSessionFetcher/*.h"
-    ]
+    ],
+    allow_empty = True
   ),
   deps = [
     ":GTMSessionFetcher_GTMSessionFetcher_Core_Privacy_Bundle",
@@ -80,7 +82,8 @@ precompiled_apple_resource_bundle(
   resources = glob(
     [
       "Sources/Core/Resources/PrivacyInfo.xcprivacy"
-    ]
+    ],
+    allow_empty = True
   )
 )
 precompiled_apple_resource_bundle(
@@ -93,7 +96,8 @@ precompiled_apple_resource_bundle(
   resources = glob(
     [
       "Sources/Full/Resources/PrivacyInfo.xcprivacy"
-    ]
+    ],
+    allow_empty = True
   )
 )
 genrule(
@@ -234,7 +238,8 @@ ios_unit_test(
     [
       "UnitTests/*.h",
       "UnitTests/*.m"
-    ]
+    ],
+    allow_empty = True
   ),
   deps = [
     ":GTMSessionFetcher"

@@ -27,7 +27,8 @@ apple_framework(
   srcs = glob(
     [
       "FirebaseFunctions/Sources/**/*.swift"
-    ]
+    ],
+    allow_empty = True
   ),
   deps = [
     "//Tests/Pods/FirebaseAppCheckInterop:FirebaseAppCheckInterop",
@@ -129,7 +130,8 @@ ios_unit_test(
       "FirebaseFunctions/Tests/ObjCIntegration/ObjC*.mm",
       "FirebaseFunctions/Tests/ObjCIntegration/ObjC*.s",
       "FirebaseFunctions/Tests/ObjCIntegration/ObjC*.swift"
-    ]
+    ],
+    allow_empty = True
   ),
   deps = [
     ":FirebaseFunctions"
@@ -318,7 +320,8 @@ ios_unit_test(
   srcs = glob(
     [
       "FirebaseFunctions/Tests/Integration/*.swift"
-    ]
+    ],
+    allow_empty = True
   ),
   deps = [
     ":FirebaseFunctions"

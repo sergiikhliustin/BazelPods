@@ -48,7 +48,8 @@ apple_framework(
     [
       "TXLiteAVSDK_Player/TXLiteAVSDK_Player.xcframework/ios-arm64_armv7/TXLiteAVSDK_Player.framework/Headers/*.h",
       "TXLiteAVSDK_Player/TXLiteAVSDK_Player.xcframework/ios-arm64_armv7/TXLiteAVSDK_Player.framework/Headers/*.h"
-    ]
+    ],
+    allow_empty = True
   ),
   deps = select(
     {
@@ -133,7 +134,8 @@ apple_dynamic_xcframework_import(
   xcframework_imports = glob(
     [
       "TXLiteAVSDK_Player/TXFFmpeg.xcframework/**"
-    ]
+    ],
+    allow_empty = True
   ),
   visibility = [
     "//visibility:public"
@@ -144,7 +146,8 @@ apple_static_xcframework_import(
   xcframework_imports = glob(
     [
       "TXLiteAVSDK_Player/TXLiteAVSDK_Player.xcframework/**"
-    ]
+    ],
+    allow_empty = True
   ),
   visibility = [
     "//visibility:public"
@@ -155,7 +158,8 @@ apple_dynamic_xcframework_import(
   xcframework_imports = glob(
     [
       "TXLiteAVSDK_Player/TXSoundTouch.xcframework/**"
-    ]
+    ],
+    allow_empty = True
   ),
   visibility = [
     "//visibility:public"

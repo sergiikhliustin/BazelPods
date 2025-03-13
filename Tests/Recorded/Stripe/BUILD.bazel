@@ -26,7 +26,8 @@ apple_framework(
   srcs = glob(
     [
       "Stripe/StripeiOS/Source/*.swift"
-    ]
+    ],
+    allow_empty = True
   ),
   deps = [
     "//Tests/Pods/StripeApplePay:StripeApplePay",
@@ -88,7 +89,8 @@ precompiled_apple_resource_bundle(
       "Stripe/StripeiOS/Resources/**/*.lproj",
       "Stripe/StripeiOS/Resources/**/*.png",
       "Stripe/StripeiOS/Resources/**/*.xcassets/**"
-    ]
+    ],
+    allow_empty = True
   )
 )
 genrule(

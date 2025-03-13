@@ -31,7 +31,8 @@ apple_framework(
       "FirebaseSessions/SourcesObjC/**/*.h",
       "FirebaseSessions/SourcesObjC/**/*.m",
       "FirebaseSessions/SourcesObjC/**/*.mm"
-    ]
+    ],
+    allow_empty = True
   ),
   deps = [
     "//Tests/Pods/FirebaseCore:FirebaseCore",
@@ -142,12 +143,14 @@ ios_unit_test(
   srcs = glob(
     [
       "FirebaseSessions/Tests/Unit/**/*.swift"
-    ]
+    ],
+    allow_empty = True
   ),
   data = glob(
     [
       "FirebaseSessions/Tests/Fixtures/**/**"
-    ]
+    ],
+    allow_empty = True
   ),
   deps = [
     ":FirebaseSessions"

@@ -32,12 +32,14 @@ apple_framework(
       "table/*.h",
       "util/*.cc",
       "util/*.h"
-    ]
+    ],
+    allow_empty = True
   ),
   public_headers = glob(
     [
       "include/leveldb/*.h"
-    ]
+    ],
+    allow_empty = True
   ),
   objc_defines = [
     "COCOAPODS=1",

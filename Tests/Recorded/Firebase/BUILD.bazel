@@ -22,7 +22,8 @@ apple_framework(
   public_headers = glob(
     [
       "CoreOnly/Sources/Firebase.h"
-    ]
+    ],
+    allow_empty = True
   ),
   deps = [
     "//Tests/Pods/FirebaseAnalytics:FirebaseAnalytics",

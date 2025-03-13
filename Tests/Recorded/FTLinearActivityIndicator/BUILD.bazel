@@ -36,7 +36,8 @@ apple_framework(
       "FTLinearActivityIndicator/Classes/**/*.mm",
       "FTLinearActivityIndicator/Classes/**/*.s",
       "FTLinearActivityIndicator/Classes/**/*.swift"
-    ]
+    ],
+    allow_empty = True
   ),
   objc_defines = [
     "COCOAPODS=1"

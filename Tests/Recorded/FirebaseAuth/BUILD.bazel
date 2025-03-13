@@ -30,12 +30,14 @@ apple_framework(
       "FirebaseAuth/Sources/**/*.h",
       "FirebaseAuth/Sources/**/*.m",
       "FirebaseCore/Extension/*.h"
-    ]
+    ],
+    allow_empty = True
   ),
   public_headers = glob(
     [
       "FirebaseAuth/Sources/Public/FirebaseAuth/*.h"
-    ]
+    ],
+    allow_empty = True
   ),
   deps = [
     "//Tests/Pods/FirebaseAppCheckInterop:FirebaseAppCheckInterop",
@@ -139,7 +141,8 @@ ios_unit_test(
       "FirebaseAuth/Tests/Unit*/**/*.h",
       "FirebaseAuth/Tests/Unit*/**/*.m",
       "FirebaseAuth/Tests/Unit*/**/*.swift"
-    ]
+    ],
+    allow_empty = True
   ),
   deps = [
     "//Tests/Pods/OCMock:OCMock",

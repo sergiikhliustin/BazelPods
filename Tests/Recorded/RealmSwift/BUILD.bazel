@@ -28,7 +28,8 @@ apple_framework(
       "Realm/Swift/*.swift",
       "RealmSwift/*.swift",
       "RealmSwift/Impl/*.swift"
-    ]
+    ],
+    allow_empty = True
   ),
   deps = [
     "//Tests/Pods/Realm:Realm",
@@ -83,7 +84,8 @@ precompiled_apple_resource_bundle(
   resources = glob(
     [
       "RealmSwift/PrivacyInfo.xcprivacy"
-    ]
+    ],
+    allow_empty = True
   )
 )
 genrule(

@@ -48,12 +48,14 @@ apple_framework(
       "GoogleDataTransport/GDTCORLibrary/**/*.mm",
       "GoogleDataTransport/GDTCORLibrary/**/*.s",
       "GoogleDataTransport/GDTCORLibrary/**/*.swift"
-    ]
+    ],
+    allow_empty = True
   ),
   public_headers = glob(
     [
       "GoogleDataTransport/GDTCORLibrary/Public/GoogleDataTransport/*.h"
-    ]
+    ],
+    allow_empty = True
   ),
   deps = [
     "//Tests/Pods/GoogleUtilities:GoogleUtilities",
@@ -171,7 +173,8 @@ ios_unit_test(
       "GoogleDataTransport/GDTCORTests/Common/**/*.m",
       "GoogleDataTransport/GDTCORTests/Unit/**/*.h",
       "GoogleDataTransport/GDTCORTests/Unit/**/*.m"
-    ]
+    ],
+    allow_empty = True
   ),
   deps = [
     ":GoogleDataTransport"

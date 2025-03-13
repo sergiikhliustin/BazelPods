@@ -30,12 +30,14 @@ apple_framework(
       "FirebaseABTesting/Sources/**/*.m",
       "FirebaseCore/Extension/*.h",
       "Interop/Analytics/Public/*.h"
-    ]
+    ],
+    allow_empty = True
   ),
   public_headers = glob(
     [
       "FirebaseABTesting/Sources/Public/FirebaseABTesting/*.h"
-    ]
+    ],
+    allow_empty = True
   ),
   deps = [
     "//Tests/Pods/FirebaseCore:FirebaseCore"
@@ -128,12 +130,14 @@ ios_unit_test(
     [
       "FirebaseABTesting/Tests/Unit/**/*.h",
       "FirebaseABTesting/Tests/Unit/**/*.m"
-    ]
+    ],
+    allow_empty = True
   ),
   data = glob(
     [
       "FirebaseABTesting/Tests/Unit/Resources/*.txt"
-    ]
+    ],
+    allow_empty = True
   ),
   deps = [
     "//Tests/Pods/OCMock:OCMock",

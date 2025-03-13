@@ -22,18 +22,21 @@ apple_framework(
     [
       "Demo/TXLiteAVDemo/SuperPlayerKit/SuperPlayer/**/*.h",
       "Demo/TXLiteAVDemo/SuperPlayerKit/SuperPlayer/**/*.m"
-    ]
+    ],
+    allow_empty = True
   ),
   private_headers = glob(
     [
       "Demo/TXLiteAVDemo/SuperPlayerKit/SuperPlayer/Utils/TXBitrateItemHelper.h",
       "Demo/TXLiteAVDemo/SuperPlayerKit/SuperPlayer/Views/SuperPlayerView+Private.h"
-    ]
+    ],
+    allow_empty = True
   ),
   data = glob(
     [
       "Demo/TXLiteAVDemo/SuperPlayerKit/SuperPlayer/Resource/**"
-    ]
+    ],
+    allow_empty = True
   ),
   deps = [
     "//Tests/Pods/AFNetworking:AFNetworking",

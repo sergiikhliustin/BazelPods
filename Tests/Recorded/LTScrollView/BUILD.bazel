@@ -27,7 +27,8 @@ apple_framework(
       "Example/LTScrollView/Lib/**/*.swift",
       "Example/LTScrollView/Lib/LTFollowMove/*.swift",
       "Example/LTScrollView/Lib/LTLoopsPlay/*.swift"
-    ]
+    ],
+    allow_empty = True
   ),
   objc_defines = [
     "COCOAPODS=1"

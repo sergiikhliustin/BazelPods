@@ -33,7 +33,8 @@ apple_framework(
       "ios/Capacitor/Capacitor/Plugins/*.h",
       "ios/Capacitor/Capacitor/Plugins/*.m",
       "ios/Capacitor/Capacitor/Plugins/*.swift"
-    ]
+    ],
+    allow_empty = True
   ),
   data = [
     "ios/Capacitor/Capacitor/assets/native-bridge.js"

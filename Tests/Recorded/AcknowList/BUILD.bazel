@@ -26,7 +26,8 @@ apple_framework(
   srcs = glob(
     [
       "Sources/AcknowList/*.swift"
-    ]
+    ],
+    allow_empty = True
   ),
   deps = [
     ":AcknowList_AcknowListBundle_Bundle"
@@ -71,7 +72,8 @@ precompiled_apple_resource_bundle(
   resources = glob(
     [
       "Sources/AcknowList/Resources/**/*.lproj"
-    ]
+    ],
+    allow_empty = True
   )
 )
 genrule(

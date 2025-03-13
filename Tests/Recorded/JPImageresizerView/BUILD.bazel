@@ -35,7 +35,8 @@ apple_framework(
       "JPImageresizerView/Classes/**/*.mm",
       "JPImageresizerView/Classes/**/*.s",
       "JPImageresizerView/Classes/**/*.swift"
-    ]
+    ],
+    allow_empty = True
   ),
   objc_defines = [
     "COCOAPODS=1"

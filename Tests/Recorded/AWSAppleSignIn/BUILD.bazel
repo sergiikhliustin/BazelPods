@@ -25,12 +25,14 @@ apple_framework(
     [
       "AWSAuthSDK/Sources/AWSAppleSignIn/*.h",
       "AWSAuthSDK/Sources/AWSAppleSignIn/*.m"
-    ]
+    ],
+    allow_empty = True
   ),
   public_headers = glob(
     [
       "AWSAuthSDK/Sources/AWSAppleSignIn/*.h"
-    ]
+    ],
+    allow_empty = True
   ),
   deps = [
     "//Tests/Pods/AWSAuthCore:AWSAuthCore",

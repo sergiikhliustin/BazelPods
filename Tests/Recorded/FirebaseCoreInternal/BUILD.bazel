@@ -27,7 +27,8 @@ apple_framework(
   srcs = glob(
     [
       "FirebaseCore/Internal/Sources/**/*.swift"
-    ]
+    ],
+    allow_empty = True
   ),
   deps = [
     "//Tests/Pods/GoogleUtilities:GoogleUtilities"
@@ -113,7 +114,8 @@ ios_unit_test(
     [
       "FirebaseCore/Internal/Tests/Common/**/*.swift",
       "FirebaseCore/Internal/Tests/Unit/**/*.swift"
-    ]
+    ],
+    allow_empty = True
   ),
   deps = [
     ":FirebaseCoreInternal"
@@ -303,7 +305,8 @@ ios_unit_test(
     [
       "FirebaseCore/Internal/Tests/Common/**/*.swift",
       "FirebaseCore/Internal/Tests/Integration/**/*.swift"
-    ]
+    ],
+    allow_empty = True
   ),
   deps = [
     ":FirebaseCoreInternal"

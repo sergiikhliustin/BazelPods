@@ -27,7 +27,8 @@ apple_framework(
       "Classes/**/*.h",
       "Classes/**/*.m",
       "Classes/**/*.mm"
-    ]
+    ],
+    allow_empty = True
   ),
   public_headers = glob(
     [
@@ -48,7 +49,8 @@ apple_framework(
       "Classes/Utility/FLEXMacros.h",
       "Classes/Utility/FLEXResources.h",
       "Classes/Utility/Runtime/Objc/**/*.h"
-    ]
+    ],
+    allow_empty = True
   ),
   objc_defines = [
     "COCOAPODS=1"

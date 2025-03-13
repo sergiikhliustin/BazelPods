@@ -28,7 +28,8 @@ apple_framework(
     [
       "FirebaseStorage/Sources/**/*.swift",
       "FirebaseStorage/Typedefs/*.h"
-    ]
+    ],
+    allow_empty = True
   ),
   deps = [
     "//Tests/Pods/FirebaseAppCheckInterop:FirebaseAppCheckInterop",
@@ -122,7 +123,8 @@ ios_unit_test(
     [
       "FirebaseStorage/Tests/ObjCIntegration/*.m",
       "FirebaseStorage/Tests/ObjCIntegration/*.mm"
-    ]
+    ],
+    allow_empty = True
   ),
   data = [
     "FirebaseStorage/Tests/Integration/Resources/1mb.dat",

@@ -26,7 +26,8 @@ apple_framework(
   srcs = glob(
     [
       "RevenueCatUI/**/*.swift"
-    ]
+    ],
+    allow_empty = True
   ),
   deps = [
     "//Tests/Pods/RevenueCat:RevenueCat",
@@ -74,7 +75,8 @@ precompiled_apple_resource_bundle(
     [
       "RevenueCatUI/Resources/background.jpg",
       "RevenueCatUI/Resources/icons.xcassets/**"
-    ]
+    ],
+    allow_empty = True
   )
 )
 genrule(

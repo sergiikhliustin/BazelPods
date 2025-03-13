@@ -27,7 +27,8 @@ apple_framework(
     [
       "Sources/**/*.h",
       "Sources/**/*.swift"
-    ]
+    ],
+    allow_empty = True
   ),
   deps = [
     ":Mantis_MantisResources_Bundle"
@@ -71,7 +72,8 @@ precompiled_apple_resource_bundle(
   resources = glob(
     [
       "Sources/**/*.lproj/*.strings"
-    ]
+    ],
+    allow_empty = True
   )
 )
 genrule(

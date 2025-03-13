@@ -99,7 +99,8 @@ apple_dynamic_xcframework_import(
   xcframework_imports = glob(
     [
       "ffmpegkit.xcframework/**"
-    ]
+    ],
+    allow_empty = True
   ),
   visibility = [
     "//visibility:public"
@@ -110,7 +111,8 @@ apple_dynamic_xcframework_import(
   xcframework_imports = glob(
     [
       "libavcodec.xcframework/**"
-    ]
+    ],
+    allow_empty = True
   ),
   visibility = [
     "//visibility:public"
@@ -121,7 +123,8 @@ apple_dynamic_xcframework_import(
   xcframework_imports = glob(
     [
       "libavdevice.xcframework/**"
-    ]
+    ],
+    allow_empty = True
   ),
   visibility = [
     "//visibility:public"
@@ -132,7 +135,8 @@ apple_dynamic_xcframework_import(
   xcframework_imports = glob(
     [
       "libavfilter.xcframework/**"
-    ]
+    ],
+    allow_empty = True
   ),
   visibility = [
     "//visibility:public"
@@ -143,7 +147,8 @@ apple_dynamic_xcframework_import(
   xcframework_imports = glob(
     [
       "libavformat.xcframework/**"
-    ]
+    ],
+    allow_empty = True
   ),
   visibility = [
     "//visibility:public"
@@ -154,7 +159,8 @@ apple_dynamic_xcframework_import(
   xcframework_imports = glob(
     [
       "libavutil.xcframework/**"
-    ]
+    ],
+    allow_empty = True
   ),
   visibility = [
     "//visibility:public"
@@ -165,7 +171,8 @@ apple_dynamic_xcframework_import(
   xcframework_imports = glob(
     [
       "libswresample.xcframework/**"
-    ]
+    ],
+    allow_empty = True
   ),
   visibility = [
     "//visibility:public"
@@ -176,7 +183,8 @@ apple_dynamic_xcframework_import(
   xcframework_imports = glob(
     [
       "libswscale.xcframework/**"
-    ]
+    ],
+    allow_empty = True
   ),
   visibility = [
     "//visibility:public"

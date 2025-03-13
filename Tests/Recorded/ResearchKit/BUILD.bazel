@@ -27,7 +27,8 @@ apple_framework(
       "ResearchKit/**/*.h",
       "ResearchKit/**/*.m",
       "ResearchKit/**/*.swift"
-    ]
+    ],
+    allow_empty = True
   ),
   public_headers = glob(
     [
@@ -312,7 +313,8 @@ apple_framework(
       "ResearchKit/Consent/ORKConsentSection_Private.h",
       "ResearchKit/Consent/ORKConsentSharingStepViewController.h",
       "ResearchKit/PrivateHeaders/ResearchKit_Private.h"
-    ]
+    ],
+    allow_empty = True
   ),
   private_headers = glob(
     [
@@ -453,7 +455,8 @@ apple_framework(
       "ResearchKit/Consent/ORKConsentSection_Private.h",
       "ResearchKit/Consent/ORKConsentSharingStepViewController.h",
       "ResearchKit/PrivateHeaders/ResearchKit_Private.h"
-    ]
+    ],
+    allow_empty = True
   ),
   data = glob(
     [
@@ -462,7 +465,8 @@ apple_framework(
       "ResearchKit/Animations/**/*.m4v",
       "ResearchKit/Artwork.xcassets/**",
       "ResearchKit/Localized/*.lproj"
-    ]
+    ],
+    allow_empty = True
   ),
   objc_defines = [
     "COCOAPODS=1"

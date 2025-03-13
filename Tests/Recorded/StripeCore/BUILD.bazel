@@ -26,7 +26,8 @@ apple_framework(
   srcs = glob(
     [
       "StripeCore/StripeCore/**/*.swift"
-    ]
+    ],
+    allow_empty = True
   ),
   deps = [
     ":StripeCore_StripeCore_Bundle"
@@ -76,7 +77,8 @@ precompiled_apple_resource_bundle(
   resources = glob(
     [
       "StripeCore/StripeCore/Resources/**/*.lproj"
-    ]
+    ],
+    allow_empty = True
   )
 )
 genrule(

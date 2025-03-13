@@ -25,7 +25,8 @@ apple_framework(
     [
       "AWSAutoScaling/*.h",
       "AWSAutoScaling/*.m"
-    ]
+    ],
+    allow_empty = True
   ),
   deps = [
     "//Tests/Pods/AWSCore:AWSCore"

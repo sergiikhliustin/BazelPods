@@ -27,7 +27,8 @@ apple_framework(
       "Source/OCMockito/**/*.m",
       "Source/ThirdParty/**/*.h",
       "Source/ThirdParty/**/*.m"
-    ]
+    ],
+    allow_empty = True
   ),
   public_headers = glob(
     [
@@ -40,7 +41,8 @@ apple_framework(
       "Source/OCMockito/Mocking/MKTObjectMock.h",
       "Source/OCMockito/Mocking/MKTProtocolMock.h",
       "Source/OCMockito/Stubbing/MKTOngoingStubbing.h"
-    ]
+    ],
+    allow_empty = True
   ),
   deps = [
     "//Tests/Pods/OCHamcrest:OCHamcrest"

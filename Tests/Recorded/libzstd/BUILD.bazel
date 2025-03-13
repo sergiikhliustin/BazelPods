@@ -35,14 +35,16 @@ apple_framework(
       "lib/zdict.h",
       "lib/zstd.h",
       "lib/zstd_errors.h"
-    ]
+    ],
+    allow_empty = True
   ),
   public_headers = glob(
     [
       "lib/zdict.h",
       "lib/zstd.h",
       "lib/zstd_errors.h"
-    ]
+    ],
+    allow_empty = True
   ),
   objc_defines = [
     "COCOAPODS=1"

@@ -42,7 +42,8 @@ apple_framework(
       "Sources/SwifterSwift/SwiftStdlib/*.swift",
       "Sources/SwifterSwift/UIKit/*.swift",
       "Sources/SwifterSwift/WebKit/*.swift"
-    ]
+    ],
+    allow_empty = True
   ),
   objc_defines = [
     "COCOAPODS=1"

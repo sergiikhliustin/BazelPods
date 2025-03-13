@@ -29,7 +29,8 @@ apple_framework(
       "wrappers/ios/Sources/Wrapper/**/*.h",
       "wrappers/ios/Sources/Wrapper/**/*.m",
       "wrappers/ios/Sources/Wrapper/**/*.mm"
-    ]
+    ],
+    allow_empty = True
   ),
   public_headers = glob(
     [
@@ -46,12 +47,14 @@ apple_framework(
     ],
     exclude = [
       "core/src/**/*.h"
-    ]
+    ],
+    allow_empty = True
   ),
   private_headers = glob(
     [
       "core/src/**/*.h"
-    ]
+    ],
+    allow_empty = True
   ),
   objc_defines = [
     "COCOAPODS=1"

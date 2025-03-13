@@ -25,7 +25,8 @@ apple_framework(
   srcs = glob(
     [
       "Sources/Promises/*.swift"
-    ]
+    ],
+    allow_empty = True
   ),
   deps = [
     "//Tests/Pods/PromisesObjC:PromisesObjC"

@@ -29,7 +29,8 @@ apple_framework(
       "Sources/AnyImageKit/Core/**/*.swift",
       "Sources/AnyImageKit/Editor/**/*.swift",
       "Sources/AnyImageKit/Picker/**/*.swift"
-    ]
+    ],
+    allow_empty = True
   ),
   deps = [
     "//Tests/Pods/Kingfisher:Kingfisher",
@@ -94,7 +95,8 @@ precompiled_apple_resource_bundle(
   resources = glob(
     [
       "Sources/AnyImageKit/Resources/Capture/**/**"
-    ]
+    ],
+    allow_empty = True
   )
 )
 precompiled_apple_resource_bundle(
@@ -107,7 +109,8 @@ precompiled_apple_resource_bundle(
   resources = glob(
     [
       "Sources/AnyImageKit/Resources/Core/**/**"
-    ]
+    ],
+    allow_empty = True
   )
 )
 precompiled_apple_resource_bundle(
@@ -120,7 +123,8 @@ precompiled_apple_resource_bundle(
   resources = glob(
     [
       "Sources/AnyImageKit/Resources/Editor/**/**"
-    ]
+    ],
+    allow_empty = True
   )
 )
 precompiled_apple_resource_bundle(
@@ -133,7 +137,8 @@ precompiled_apple_resource_bundle(
   resources = glob(
     [
       "Sources/AnyImageKit/Resources/Picker/**/**"
-    ]
+    ],
+    allow_empty = True
   )
 )
 genrule(

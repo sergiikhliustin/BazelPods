@@ -51,8 +51,13 @@ public struct GlobNodeV2: StarlarkConvertible {
                    value: .int(self.excludeDirectories ? 1 : 0))
         ]
 
-        return .functionCall(name: "glob",
-                arguments: includeArgs + excludeArgs + dirArgs)
+        let allowEmptyArgs: [StarlarkFunctionArgument] = [
+            .named(name: "allow_empty", value: .bool(true))
+        ]
+
+        return .functionCall(
+            name: "glob",
+            arguments: includeArgs + excludeArgs + dirArgs + allowEmptyArgs)
     }
 }
 

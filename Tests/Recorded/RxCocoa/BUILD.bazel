@@ -28,7 +28,8 @@ apple_framework(
       "RxCocoa/**/*.h",
       "RxCocoa/**/*.m",
       "RxCocoa/**/*.swift"
-    ]
+    ],
+    allow_empty = True
   ),
   deps = [
     "//Tests/Pods/RxRelay:RxRelay",

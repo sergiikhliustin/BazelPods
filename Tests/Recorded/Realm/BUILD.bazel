@@ -145,7 +145,8 @@ apple_framework(
       "include/RLMUser_Private.h",
       "include/RLMValue.h",
       "include/Realm.h"
-    ]
+    ],
+    allow_empty = True
   ),
   public_headers = glob(
     [
@@ -236,7 +237,8 @@ apple_framework(
       "include/RLMSyncSubscription_Private.h",
       "include/RLMUpdateResult_Private.h",
       "include/RLMUser_Private.h"
-    ]
+    ],
+    allow_empty = True
   ),
   private_headers = glob(
     [
@@ -272,7 +274,8 @@ apple_framework(
       "include/RLMSyncSubscription_Private.h",
       "include/RLMUpdateResult_Private.h",
       "include/RLMUser_Private.h"
-    ]
+    ],
+    allow_empty = True
   ),
   deps = [
     ":Realm_realm_objc_privacy_Bundle"
@@ -374,7 +377,8 @@ precompiled_apple_resource_bundle(
   resources = glob(
     [
       "Realm/PrivacyInfo.xcprivacy"
-    ]
+    ],
+    allow_empty = True
   )
 )
 apple_static_xcframework_import(
@@ -382,7 +386,8 @@ apple_static_xcframework_import(
   xcframework_imports = glob(
     [
       "core/realm-monorepo.xcframework/**"
-    ]
+    ],
+    allow_empty = True
   ),
   visibility = [
     "//visibility:public"

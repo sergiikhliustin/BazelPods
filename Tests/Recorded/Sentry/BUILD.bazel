@@ -37,12 +37,14 @@ apple_framework(
       "Sources/SentryCrash/**/*.m",
       "Sources/SentryCrash/**/*.mm",
       "Sources/Swift/Sentry.swift"
-    ]
+    ],
+    allow_empty = True
   ),
   public_headers = glob(
     [
       "Sources/Sentry/Public/*.h"
-    ]
+    ],
+    allow_empty = True
   ),
   data = [
     "Sources/Resources/PrivacyInfo.xcprivacy"

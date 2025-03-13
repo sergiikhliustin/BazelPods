@@ -26,7 +26,8 @@ apple_framework(
   srcs = glob(
     [
       "Sources/**/*.swift"
-    ]
+    ],
+    allow_empty = True
   ),
   deps = [
     ":SuperwallKit_SuperwallKit_Bundle"
@@ -86,7 +87,8 @@ precompiled_apple_resource_bundle(
       "Sources/SuperwallKit/**/*.xcassets/**",
       "Sources/SuperwallKit/**/*.xcdatamodeld/**",
       "Sources/SuperwallKit/**/PrivacyInfo.xcprivacy"
-    ]
+    ],
+    allow_empty = True
   )
 )
 genrule(

@@ -44,7 +44,8 @@ apple_framework(
       "Source/KSCrash/swift/**/*.h",
       "Source/KSCrash/swift/**/*.m",
       "Source/KSCrash/swift/**/*.mm"
-    ]
+    ],
+    allow_empty = True
   ),
   public_headers = glob(
     [
@@ -54,7 +55,8 @@ apple_framework(
       "Source/KSCrash/Recording/KSCrashReportWriter.h",
       "Source/KSCrash/Recording/Monitors/KSCrashMonitorType.h",
       "Source/KSCrash/Reporting/Filters/KSCrashReportFilter.h"
-    ]
+    ],
+    allow_empty = True
   ),
   objc_defines = [
     "COCOAPODS=1"

@@ -25,7 +25,8 @@ apple_framework(
     [
       "ZXingObjC/**/*.h",
       "ZXingObjC/**/*.m"
-    ]
+    ],
+    allow_empty = True
   ),
   objc_defines = [
     "COCOAPODS=1"

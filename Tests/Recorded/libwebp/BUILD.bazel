@@ -44,7 +44,8 @@ apple_framework(
       "src/webp/mux.h",
       "src/webp/mux_types.h",
       "src/webp/types.h"
-    ]
+    ],
+    allow_empty = True
   ),
   public_headers = glob(
     [
@@ -56,7 +57,8 @@ apple_framework(
       "src/webp/mux.h",
       "src/webp/mux_types.h",
       "src/webp/types.h"
-    ]
+    ],
+    allow_empty = True
   ),
   objc_defines = [
     "COCOAPODS=1"

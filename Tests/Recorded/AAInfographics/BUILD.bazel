@@ -25,7 +25,8 @@ apple_framework(
   srcs = glob(
     [
       "AAInfographics/**/*.swift"
-    ]
+    ],
+    allow_empty = True
   ),
   data = [
     "AAInfographics/AAJSFiles.bundle"

@@ -25,7 +25,8 @@ apple_framework(
     [
       "SVProgressHUD/*.h",
       "SVProgressHUD/*.m"
-    ]
+    ],
+    allow_empty = True
   ),
   data = [
     "SVProgressHUD/PrivacyInfo.xcprivacy",

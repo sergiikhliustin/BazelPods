@@ -26,7 +26,8 @@ apple_framework(
   srcs = glob(
     [
       "StripeUICore/StripeUICore/**/*.swift"
-    ]
+    ],
+    allow_empty = True
   ),
   deps = [
     "//Tests/Pods/StripeCore:StripeCore",
@@ -79,7 +80,8 @@ precompiled_apple_resource_bundle(
       "StripeUICore/StripeUICore/Resources/**/*.lproj",
       "StripeUICore/StripeUICore/Resources/**/*.png",
       "StripeUICore/StripeUICore/Resources/**/*.xcassets/**"
-    ]
+    ],
+    allow_empty = True
   )
 )
 genrule(

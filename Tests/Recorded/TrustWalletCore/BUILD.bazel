@@ -54,13 +54,15 @@ apple_framework(
       "Sources/Generated/Protobuf/*.swift",
       "Sources/Types/*.swift",
       "include/**/*.h"
-    ]
+    ],
+    allow_empty = True
   ),
   public_headers = glob(
     [
       "Sources/*.h",
       "include/**/*.h"
-    ]
+    ],
+    allow_empty = True
   ),
   deps = [
     "//Tests/Pods/SwiftProtobuf:SwiftProtobuf"
@@ -115,7 +117,8 @@ apple_static_xcframework_import(
   xcframework_imports = glob(
     [
       "WalletCoreCommon.xcframework/**"
-    ]
+    ],
+    allow_empty = True
   ),
   visibility = [
     "//visibility:public"

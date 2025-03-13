@@ -27,7 +27,8 @@ apple_framework(
       "Sources/InstantSearch/**/*.swift",
       "Sources/InstantSearchCore/**/*.swift",
       "Sources/InstantSearchInsights/**/*.swift"
-    ]
+    ],
+    allow_empty = True
   ),
   deps = [
     "//Tests/Pods/AlgoliaSearchClient:AlgoliaSearchClient",

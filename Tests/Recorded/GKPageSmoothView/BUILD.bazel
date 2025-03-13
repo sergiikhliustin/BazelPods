@@ -26,7 +26,8 @@ apple_framework(
     [
       "Sources/GKPageSmoothView/*.h",
       "Sources/GKPageSmoothView/*.m"
-    ]
+    ],
+    allow_empty = True
   ),
   objc_defines = [
     "COCOAPODS=1"

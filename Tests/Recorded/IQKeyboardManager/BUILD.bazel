@@ -26,7 +26,8 @@ apple_framework(
     [
       "IQKeyboardManager/**/*.h",
       "IQKeyboardManager/**/*.m"
-    ]
+    ],
+    allow_empty = True
   ),
   public_headers = glob(
     [
@@ -43,7 +44,8 @@ apple_framework(
       "IQKeyboardManager/IQToolbar/IQTitleBarButtonItem.h",
       "IQKeyboardManager/IQToolbar/IQToolbar.h",
       "IQKeyboardManager/IQToolbar/IQUIView+IQKeyboardToolbar.h"
-    ]
+    ],
+    allow_empty = True
   ),
   deps = [
     ":IQKeyboardManager_IQKeyboardManager_Bundle"
@@ -90,7 +92,8 @@ precompiled_apple_resource_bundle(
   resources = glob(
     [
       "IQKeyboardManager/PrivacyInfo.xcprivacy"
-    ]
+    ],
+    allow_empty = True
   )
 )
 genrule(

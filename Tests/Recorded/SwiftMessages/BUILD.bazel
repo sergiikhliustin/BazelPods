@@ -26,7 +26,8 @@ apple_framework(
   srcs = glob(
     [
       "SwiftMessages/**/*.swift"
-    ]
+    ],
+    allow_empty = True
   ),
   deps = [
     ":SwiftMessages_SwiftMessages_Bundle"
@@ -72,7 +73,8 @@ precompiled_apple_resource_bundle(
   resources = glob(
     [
       "SwiftMessages/Resources/**"
-    ]
+    ],
+    allow_empty = True
   )
 )
 genrule(

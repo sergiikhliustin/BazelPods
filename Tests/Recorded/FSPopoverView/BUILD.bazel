@@ -36,7 +36,8 @@ apple_framework(
       "FSPopoverView/Classes/**/*.mm",
       "FSPopoverView/Classes/**/*.s",
       "FSPopoverView/Classes/**/*.swift"
-    ]
+    ],
+    allow_empty = True
   ),
   objc_defines = [
     "COCOAPODS=1"

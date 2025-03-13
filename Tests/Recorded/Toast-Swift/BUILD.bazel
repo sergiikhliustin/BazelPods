@@ -25,7 +25,8 @@ apple_framework(
   srcs = glob(
     [
       "Toast/*.swift"
-    ]
+    ],
+    allow_empty = True
   ),
   data = [
     "Toast/Resources/PrivacyInfo.xcprivacy"

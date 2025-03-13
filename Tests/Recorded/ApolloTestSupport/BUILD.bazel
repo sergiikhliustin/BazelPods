@@ -25,7 +25,8 @@ apple_framework(
   srcs = glob(
     [
       "Sources/ApolloTestSupport/*.swift"
-    ]
+    ],
+    allow_empty = True
   ),
   deps = [
     "//Tests/Pods/Apollo:Apollo"

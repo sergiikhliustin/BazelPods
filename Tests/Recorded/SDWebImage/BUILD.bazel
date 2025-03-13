@@ -29,12 +29,14 @@ apple_framework(
       "SDWebImage/Private/*.h",
       "SDWebImage/Private/*.m",
       "WebImage/SDWebImage.h"
-    ]
+    ],
+    allow_empty = True
   ),
   private_headers = glob(
     [
       "SDWebImage/Private/*.h"
-    ]
+    ],
+    allow_empty = True
   ),
   deps = [
     ":SDWebImage_SDWebImage_Bundle"
@@ -85,7 +87,8 @@ precompiled_apple_resource_bundle(
   resources = glob(
     [
       "WebImage/PrivacyInfo.xcprivacy"
-    ]
+    ],
+    allow_empty = True
   )
 )
 genrule(

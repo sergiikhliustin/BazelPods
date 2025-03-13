@@ -28,12 +28,14 @@ apple_framework(
       "Sources/**/*.h",
       "Sources/**/*.m",
       "Sources/**/*.swift"
-    ]
+    ],
+    allow_empty = True
   ),
   public_headers = glob(
     [
       "Sources/**/*.h"
-    ]
+    ],
+    allow_empty = True
   ),
   deps = [
     ":Wormholy_Wormholy_Bundle"
@@ -80,7 +82,8 @@ precompiled_apple_resource_bundle(
       "Sources/**/*.js",
       "Sources/**/*.storyboard",
       "Sources/**/*.xib"
-    ]
+    ],
+    allow_empty = True
   )
 )
 genrule(

@@ -25,12 +25,14 @@ apple_framework(
     [
       "FirebaseAppCheck/Interop/**/*.h",
       "FirebaseAppCheck/Interop/**/*.m"
-    ]
+    ],
+    allow_empty = True
   ),
   public_headers = glob(
     [
       "FirebaseAppCheck/Interop/Public/FirebaseAppCheckInterop/*.h"
-    ]
+    ],
+    allow_empty = True
   ),
   objc_defines = [
     "COCOAPODS=1"
