@@ -1,14 +1,14 @@
 {
-    "homepage": "https://github.com/sergeykhliustin/BazelPods",
+    "homepage": "https://github.com/sergiikhliustin/BazelPods",
     "maintainers": [
         {
             "email": "sergey.khliustin@gmail.com",
-            "github": "sergeykhliustin",
+            "github": "sergiikhliustin",
             "name": "Sergii Khliustin"
         }
     ],
     "repository": [
-        "github:sergeykhliustin/BazelPods"
+        "github:sergiikhliustin/BazelPods"
     ],
     "versions": [],
     "yanked_versions": {}
