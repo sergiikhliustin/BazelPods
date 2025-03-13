@@ -17,7 +17,6 @@ expunge:
 
 bootstrap:
 	@bundle install
-	@echo "build --swiftcopt=-j`sysctl -n hw.ncpu`" > .env_bazelrc
 
 integration:
 	$(MAKE) integration-clean
