@@ -90,7 +90,7 @@ extension BazelPods {
             if !dryRun {
                 try Data().write(to: URL(fileURLWithPath: absoluteSRCPath("Pods/BUILD.bazel")))
             }
-            logger.log_info("All Done! Don't forget to ⭐️ https://github.com/sergeykhliustin/BazelPods")
+            logger.log_info("All Done! Don't forget to ⭐️ https://github.com/sergiikhliustin/BazelPods")
         }
 
         func process(specification: PodSpecification, userOptions: [UserOption]) throws {
